@@ -25,9 +25,12 @@ export default {
     }
   },
   methods: {
-    deleteTask(id) {
-      this.tasks = this.tasks.filter((task) => task.id !== id )
-    }
+
+      deleteTask(id) {
+        if(confirm ('Are your sure?') ) {
+        this.tasks = this.tasks.filter((task) => task.id !== id )
+      }
+    },
   },
   // Lifecycle - Called synchronously after the instance is created.
   created() {
