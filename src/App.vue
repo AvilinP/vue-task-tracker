@@ -2,6 +2,7 @@
 
   <div class="container">
     <Header title="Task Tracker"/>
+    <Tasks :tasks="tasks"/>
   </div>
 
 </template>
@@ -9,13 +10,43 @@
 <script>
 
 import Header from './components/Header'
+import Tasks from './components/Tasks'
+
 
 export default {
   name: 'App',
   components: {
     Header,
+    Tasks,
   },
-  
+  data() {
+    return {
+      tasks: []
+    }
+  },
+  // Lifecycle - Called synchronously after the instance is created.
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: 'Walk the dog',
+        day: 'March 1st at 2:30 pm',
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: 'Walk the kid',
+        day: 'March 2nd at 7:30 pm',
+        reminder: true,
+      },
+      {
+        id: 3,
+        text: 'Walk the husband',
+        day: 'March 3rd at 9:30 pm',
+        reminder: false,
+      },
+    ]
+  }
 }
 </script>
 
