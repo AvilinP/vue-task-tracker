@@ -3,13 +3,13 @@
     {
       "text": "Buy Skincare",
       "day": "Today!",
-      "reminder": true,
+      "reminder": false,
       "id": 1
     },
     {
       "text": "Go to the Dentist",
       "day": "Tomorrow",
-      "reminder": false,
+      "reminder": true,
       "id": 2
     }
   ]
