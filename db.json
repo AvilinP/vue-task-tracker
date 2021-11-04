@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "text": "Buy Skincare",
+      "day": "Today!",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Go to the Dentist",
+      "day": "Tomorrow",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}
